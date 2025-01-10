@@ -4,8 +4,6 @@ body {
   color: #4e342e;
   background: #fff;
 }
-
-/* Navigation Bar */
 /* Navigation Bar */
 nav {
   display: flex;
@@ -28,17 +26,21 @@ nav {
   display: flex;
   justify-content: center;
   flex-grow: 1; /* Allows the links to take up available space */
-  gap: 20px; /* Space between links */
+  gap: 40px; /* Space between links */
 }
 
 .nav-links a {
   text-decoration: none;
   color: #8b4513;
-  font-size: 1rem; /* Adjust font size as needed */
+  font-size: 20px; /* Base font size */
+  font-weight: normal;
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+  font-size: 1.4rem; /* Slightly larger font size */
+  font-weight: bold;
 }
 
 /* Hero Section */
@@ -50,7 +52,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Adjust for the fixed navbar */
+  /* margin-top: 50px; Adjust for the fixed navbar */
   overflow: hidden; /* Prevent any overflow */
 }
 
@@ -66,10 +68,21 @@ nav {
 .hero-text {
   position: absolute;
   top: 50%; /* Vertically center the text */
-  left: 50%; /* Horizontally center the text */
+  left: 46%; /* Horizontally center the text */
   transform: translate(-50%, -50%); /* Adjust to truly center the text */
   color: white; /* White text for visibility */
-  font-size: 70px; /* Adjust the font size as needed */
+  font-size: 80px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.hero-p {
+  position: absolute;
+  top: 55%; /* Vertically center the text */
+  left: 58%; /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Adjust to truly center the text */
+  color: white; /* White text for visibility */
+  font-size: 40px; /* Adjust the font size as needed */
   font-weight: bold;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -158,9 +171,15 @@ nav {
   margin: 15px;
 }
 
+.card,
+.team-member {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
 .card:hover,
 .team-member:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px); /* Moves the element upwards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow for depth */
 }
 
 /* Image Styles */
