@@ -71,7 +71,7 @@ nav {
   left: 46%; /* Horizontally center the text */
   transform: translate(-50%, -50%); /* Adjust to truly center the text */
   color: white; /* White text for visibility */
-  font-size: 80px; /* Adjust the font size as needed */
+  font-size: 65px; /* Adjust the font size as needed */
   font-weight: bold;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
